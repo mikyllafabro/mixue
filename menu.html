@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixue | Ice Cream & Tea</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" id="cart-button"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+        <section class="image-section">
+            <center><img src="mixue_logo.png" alt="mixue"></center>
+        </section>
+        <div id="cart-sidebar" class="cart-sidebar">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <br>
+            <p>Total: PHP <span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <section class="menu">
+        <h2>OUR MENU</h2><br><hr>
+        <h3>Ice Cream Series</h3>
+
+        <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Mango Sundae</h3>
+            <img src="Mango-Sundae.jpg" alt="Mango Sundae">
+            <p>Vanilla Ice Cream with Real Mango Slices Topping</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Mango Sundae" data-price="65" data-image="Mango-Sundae.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Lucky Sundae Strawberry</h3>
+            <img src="Strawberry-Lucky-Sundae.jpg" alt="Strawberry-Lucky-Sundae">
+            <p>Ice Cream with Strawberry Sauce and Real Strawberry Pieces, topped with a Surprise</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Strawberry Sundae" data-price="65" data-image="Strawberry-Lucky-Sundae.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Vanilla Ice Cream</h3>
+            <img src="vanila-ice-cream-mixue.jpg" alt="Vanilla Ice Cream">
+            <p>Smooth and delicious Vanilla Cone ice cream</p>
+            <span>₱50.00</span><br><br>
+            <button class="add-to-cart" data-item="Vanilla Ice Cream" data-price="50" data-image="vanila-ice-cream-mixue.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Strawberry Mi Shake</h3>
+            <img src="Strawberry-Mi-shake.jpg" alt="Strawberry Mi Shake">
+            <p>Ice Cream with a Blend of Green Tea and Real Strawberry Pieces</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Strawberry Mi Shake" data-price="65" data-image="Strawberry-Mi-shake.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Boba Mi Shake</h3>
+            <img src="Boba-Shake.jpg" alt="Boba Mi Shake">
+            <p>Ice cream combined with brown sugar and chewy boba toppings</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Boba Mi Shake" data-price="65" data-image="Boba-Shake.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Boba Sundae</h3>
+            <img src="Boba-Sundae.jpg" alt="Boba Sundae">
+            <p>Ice Cream with Brown Sugar Syrup Sauce and Chewy Boba Topping</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Boba Sundae" data-price="65" data-image="Boba-Sundae.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Oreo Sundae</h3>
+            <img src="Oreo-Sundae.jpg" alt="Oreo Sundae">
+            <p>Crunchy Ice Cream with Chocolate and Oreo Toppings</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Oreo Sundae" data-price="65" data-image="Oreo-Sundae.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Mix Sundae</h3>
+            <img src="Mixed-Sundae-Vanilla-Strawberry-Mixue.jpg" alt="Mix Sundae">
+            <p>Smooth and delicious Vanilla Cone ice cream</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Mix Sundae" data-price="65" data-image="Mixed-Sundae-Vanilla-Strawberry-Mixue.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Kiwi Smoothies</h3>
+            <img src="Kiwi-Smoothies-mixue.jpg" alt="Kiwi Smoothies">
+            <p>Kiwi Smoothies, a combination of kiwi fruit wrapped in smooth ice cream</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Kiwi Smoothies" data-price="65" data-image="Kiwi-Smoothies-mixue.jpg">Add to Cart</button>
+        </div>
+        </div><br><hr><hr>
+        <h3>Fruit Tea Series</h3>
+
+        <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Peach Tea Earl Grey Tea</h3>
+            <img src="Peach-Tea-Mixue.jpg" alt="Peach">
+            <p>Combining fresh peach slices with yellow peach jelly and Early Grey Tea</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Peach Tea Earl Grey Tea" data-price="65" data-image="Peach-Tea-Mixue.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Mango Oats Jasmine Tea</h3>
+            <img src="Mango-Oats-Jasmine-Tea.jpg" alt="Mango">
+            <p>Jasmine tea blended with fresh mango topping and oats</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Mango Oats Jasmine Tea" data-price="65" data-image="Mango-Oats-Jasmine-Tea.jpg">Add to Cart</button>
+
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Hawaian Fruit Tea</h3>
+            <img src="Hawaian-fruit-Tea.jpg" alt="Hawaian">
+            <p>A refreshing beverage with passion fruit pearls, sweet mango toppings, and chewy yellow peach jelly</p>
+            <span>₱65.00</span><br><br>
+            <button class="add-to-cart" data-item="Hawaian Fruit Tea" data-price="65" data-image="Hawaian-fruit-Tea.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Lemon Jasmine Fruit Tea</h3>
+            <img src="Lemon-Jasmine-Tea.jpg" alt="Lemon Jasmine">
+            <p>Jasmine Tea blended with refreshing natural lemon juice</p>
+            <span>₱45.00</span><br><br>
+            <button class="add-to-cart" data-item="Lemon Jasmine Fruit Tea" data-price="45" data-image="Lemon-Jasmine-Tea.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Lemon Earl Grey Tea</h3>
+            <img src="Lemon-Early-Grey-Tea.jpg" alt="Lemon Earl">
+            <p>Earl Grey Tea blends with refreshing natural lemon juice</p>
+            <span>₱45.00</span><br><br>
+            <button class="add-to-cart" data-item="Lemon Earl Grey Tea" data-price="45" data-image="Lemon-Early-Grey-Tea.jpg">Add to Cart</button>
+        </div>
+        </div><br><hr><hr>
+        <h3>Coffee Drinks</h3>
+
+        <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Americano Coffee</h3>
+            <img src="Mixue-Americano-Coffee.jpg" alt="Americano">
+            <p>Delicious Americano Coffee</p>
+            <span>₱50.00</span><br><br>
+            <button class="add-to-cart" data-item="Americano Coffee" data-price="50" data-image="Mixue-Americano-Coffee.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Lemon Coffee</h3>
+            <img src="Lemon-Coffee.jpg" alt="Lemon Coffee">
+            <p>Lemon coffee, a new coffee product infused with the freshness of lemon</p>
+            <span>₱50.00</span><br><br>
+            <button class="add-to-cart" data-item="Lemon Coffee" data-price="50" data-image="Lemon-Coffee.jpg">Add to Cart</button>
+        </div><br>
+
+        <div class="menu-item">
+            <h3>Coffee Cookies Sundae</h3>
+            <img src="Coffee-Cookies-Sundae.jpg" alt="Coffee Cookies Sundae">
+            <p>Coffee Cookies Sundae, coffee ice cream enhanced with Cookies topping for added deliciousness</p>
+            <span>₱50.00</span><br><br>
+            <button class="add-to-cart" data-item="Coffee Cookies Sundae" data-price="50" data-image="Coffee-Cookies-Sundae.jpg">Add to Cart</button>
+        </div>
+        </div><br><hr><hr>
+    </section>
+
+    <div class="hero-buttons">
+        <a href="Act2.html" class="btn">Back</a>
+    </div>
+
+    <section class="image-section">
+        <center><img src="mixue_logo.png" alt="mixue"></center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mixue Ice Cream and Tea. All rights reserved.</p>
+    </footer>
+
+    <script src="Act2script.js"></script>
+</body>
+</html>
